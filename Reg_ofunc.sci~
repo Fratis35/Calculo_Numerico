@@ -1,0 +1,26 @@
+clc; close; 
+// pontos ‘‘experimentais’’: 
+xr = [0.02, 0.08, 0.1, 0.15, 0.18, 0.2, 0.3, 0.35, 0.5, 0.55, 0.7, ... 0.75,0.95, 1.1, 1.2, 1.7, 2, 2.4, 2.9, 3, 3.2, 3.4, 3.5, 3.6, 3.9, 3.98]; 
+yr = (0.80 + 2*xr)./(1 + xr + 1.2*xr.*xr); 
+// função ‘‘desconhecida’’ 
+rand(’seed’,15); yr = yr + 0.01*rand(xr,’n’); // adição de ruído plot(xr,yr,’o’);
+
+M = zeros(5,5); 
+vy = zeros(5,1); 
+xk = xr(2:5:$); // pontos espaçados 
+yk = yr(2:5:$); 
+for k=1:5
+    x = xk(k); x2 = x*x; 
+    y = yk(k); 
+    M(k,:) = [1, x, x2, -x*y, -x2*y];
+     vy(k) = y;
+end 
+c = inv(M)*vy; // cálculo dos coeficientes 
+disp(c);
+
+/// Gráfico da nova função obtida: 
+x = 0:0.01:4; 
+y = (c(1) + c(2)*x + c(3)*x.*x)./(1 + c(4)*x + c(5)*x.*x); 
+plot(x,y,’k’); 
+legend(’pontos’,’função com racional’); 
+xlabel(’x’); ylabel(’f(x)’);

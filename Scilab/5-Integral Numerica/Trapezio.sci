@@ -2,19 +2,19 @@ clear
 clc
 close
 
-function y = £(x)
+function y = f(x)
     y = (cos(%pi*x))./(x+1);
 endfunction
 
 ini = 0;
 fim = 1;
 itv = 0.001;
-A=0
+A=0;
 S=0;
 
 for i = ini:itv:(fim-itv)
     A = ((f(i)+f(i+itv))*itv )/2;
-    S = S+A:
+    S = S+A;
 end
 disp (S)
 

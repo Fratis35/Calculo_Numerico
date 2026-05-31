@@ -1,4 +1,3 @@
-1 - Trapézio
 clear
 clc
 

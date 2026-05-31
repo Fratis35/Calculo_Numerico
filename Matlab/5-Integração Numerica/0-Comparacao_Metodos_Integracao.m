@@ -1,4 +1,3 @@
-0 - Comparação Métodos Integração MATLAB
 clear 
 clc
 

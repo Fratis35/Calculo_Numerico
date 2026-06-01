@@ -9,9 +9,9 @@ endfunction
 a = 0;   // Limite inferior
 b = 1;   // Limite superior
 
-k = a:0.01:b
-plot(k,f(k))
-xgrid
+k = a:0.01:b;
+plot(k,f(k));
+xgrid;
 
 n_pontos = 3; 
 

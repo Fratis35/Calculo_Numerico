@@ -35,7 +35,7 @@ Repositório dedicado à implementação e estudo de algoritmos de Cálculo Num�
 * **Lagrange:** Construção direta do polinômio sem a necessidade de sistemas lineares intermédiarios.
 
 
-### 5- Integração Numérica e Convolução
+### 5- Integração Numérica
 * **Regra do Trapézio:** Aproximação da área sob a curva através de segmentos lineares (trapézios).
 * **Regras de Simpson (1/3 e 3/8):** Aproximação por polinômios de segundo e terceiro grau, ideal para curvas suaves.
 * **Fórmulas de Boole:** Método de Newton-Cotes de ordem superior que utiliza cinco pontos para maior precisão.

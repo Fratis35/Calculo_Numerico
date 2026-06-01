@@ -35,9 +35,14 @@ Repositório dedicado à implementação e estudo de algoritmos de Cálculo Num�
 * **Lagrange:** Construção direta do polinômio sem a necessidade de sistemas lineares intermédiarios.
 
 
-### 5- Integração Numérica
-* **Regra de Simpson (1/3 e 3/8):** Aproximação de áreas sob curvas.
-* **Mínimos Quadrados:** Ajuste de curvas para dados experimentais.
+### 5- Integração Numérica e Convolução
+* **Regra do Trapézio:** Aproximação da área sob a curva através de segmentos lineares (trapézios).
+* **Regras de Simpson (1/3 e 3/8):** Aproximação por polinômios de segundo e terceiro grau, ideal para curvas suaves.
+* **Fórmulas de Boole:** Método de Newton-Cotes de ordem superior que utiliza cinco pontos para maior precisão.
+* **Newton-Cotes Aberto:** Fórmulas de integração onde os limites do intervalo ($a$ e $b$) não são usados como nós de integração.
+* **Método de Romberg:** Técnica que utiliza a extrapolação de Richardson sobre a regra do trapézio para acelerar a convergência e reduzir o erro.
+* **Quadratura de Gauss:** Método de alta precisão que otimiza a escolha dos nós e dos pesos para integrar polinômios de ordem superior exatamente.
+* **Convolução Numérica:** Aplicação prática de métodos de integração para combinar dois sinais no domínio do tempo discretizado.
 
 ---
 
